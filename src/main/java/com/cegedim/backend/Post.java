@@ -1,6 +1,6 @@
 package com.cegedim.backend;
 
-public class Post{
+public class Post implements Comparable<Post>{
 	private int id;
 	private int userId;
 	private String title;
@@ -46,5 +46,13 @@ public class Post{
 
 	public void setBody(String body) {
 		this.body = body;
+	}
+	
+
+	public int compareTo(Post post) {
+		if (this.title != null && post.title != null) {
+			return this.title.compareToIgnoreCase(post.title);
+		}
+		return 0;
 	}
 }
