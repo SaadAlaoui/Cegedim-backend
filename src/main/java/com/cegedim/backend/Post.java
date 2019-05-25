@@ -1,6 +1,5 @@
 package com.cegedim.backend;
 
-
 public class Post{
 	private int id;
 	private int userId;
