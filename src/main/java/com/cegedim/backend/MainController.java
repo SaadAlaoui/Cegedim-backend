@@ -60,8 +60,8 @@ public class MainController {
 		in.close();
 		} catch (Exception e) {
 			throw new RuntimeException("Exception while calling URL:"+ myURL, e);
-		} 
- 
+		}
+		
 		return sb.toString();
 	}
 }
